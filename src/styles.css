@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Work-Sans-Bold';
+    src: url(./fonts/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Work-Sans-SemiBold';
+    src: url(./fonts/WorkSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Work-Sans-Regular';
+    src: url(./fonts/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Work-Sans-Light';
+    src:  url(./fonts/WorkSans-Light.ttf);
+}
+   
+
+:root {
+    --bright-purple: #9278E6;
+    --dark-purple: #554099;
+    --bright-green: #60E668;
+    --dark-green: #48994C;
+    --peach: #E6B78E;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Work-Sans-Bold';
+    color: var(--dark-purple);
+}
+
+nav > ul {
+    font-family: 'Work-Sans-SemiBold';
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: var(--dark-purple);
+    color: #FFF;
+    box-shadow: 0 5px 10px #b6b5b5;
+    z-index: 1;
+}
+
+nav > ul > li {
+    margin: 0;
+    padding: 15px;
+    border-bottom: 2px solid var(--dark-purple);
+}
+
+.page-divide {
+    background-image: url(./images/Restaurant_Page_Section_Icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+}
+
+#store-banner-img {
+    background-image: url('./images/Restaurant_Page_Banner.png'); 
+    background-size: cover;
+    background-position: 0% 60%;
+    height: 400px;
+    box-shadow: 0 2px 5px #b6b5b5;
+    z-index: -1;
+}
+
+#store-intro-container {
+    font-family: 'Work-Sans-Regular';
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    padding: 40px;
+}
+
+#cta-primary {
+    font-family: 'Work-Sans-SemiBold';
+    width: fit-content;
+    justify-self: center;
+    padding: 15px 30px;
+    border: 2px solid var(--dark-purple);
+    background-color: var(--dark-purple);
+    color: white;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+#cta-primary:hover {
+    background-color: #fff;
+    border: 2px solid var(--dark-purple);
+    color: var(--dark-purple);
+    cursor: pointer;
+}
+
+#store-hours-container {
+    font-family: 'Work-Sans-Regular';
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+#store-hours-container > ul {
+    margin: 0;
+    padding: 0;
+}
+
+#store-hours-container > ul > li {
+    padding: 5px 0;
+    list-style: none;
+}
+
+nav > ul > li:hover {
+    cursor: pointer;
+    background-color: var(--bright-purple);
+    border-bottom: 2px solid #FFF;
+}

@@ -6,6 +6,9 @@ import {default as createContact} from './contact.js';
 
 window.addEventListener("load", function()
 {
+    const contentDiv = document.createElement("div");
+    contentDiv.setAttribute("id", "content");
+    document.body.appendChild(contentDiv);
     const openWebpage = HomePage();
     openWebpage.addNavigation();
 })

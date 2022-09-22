@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',  
@@ -6,6 +7,11 @@ module.exports = {
   devServer: {
     static: './dist',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+    }),
+  ],
   devtool: 'inline-source-map',
   output: {
     filename: 'main.js',
